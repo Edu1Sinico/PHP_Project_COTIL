@@ -1,7 +1,13 @@
 <?php
-    $nome = $_POST["_nome"];
-    $sexo = $_POST["_sexo"];
-    $idade = $_POST["_idade"]
+    // if(!isset($_POST["_nome"]) or !isset($_POST["_sexo"]) or !isset($_POST["_idade"])) //Faz a verificação para ver se ás variáveis foram setadas.
+    // {
+    //     exit("Faltam parâmetros");
+    // }
+    // else{
+        $nome = $_POST["_nome"];
+        $sexo = $_POST["_sexo"];
+        $idade = $_POST["_idade"];
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +30,7 @@
             <input type="radio" name="_sexo" id="_sexo">
             <br>
             <label>Masculino: </label>
-            <input type="radio" name="_sexo" id="_sexo" >
+            <input type="radio" name="_sexo" id="_sexo">
             <br>
             <label>Idade: </label>
             <input type="text" name="_idade" id="_idade">
@@ -33,7 +39,7 @@
     </center>
     
     <?php
-        if($idade > 25){
+        if($idade >= 25){
             echo "Aprovado!";
         }
         else{
