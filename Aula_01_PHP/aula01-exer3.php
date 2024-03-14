@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <center>
+    <div>
         <form action="" method="post">
             <label>Nome: </label>
             <input type="text" name="_nome" id="_nome">
@@ -36,7 +36,7 @@
             <input type="text" name="_idade" id="_idade">
             <input type="submit" value="Cadastrar">
         </form>
-    </center>
+    </div>
     
     <?php
         if($idade >= 25){

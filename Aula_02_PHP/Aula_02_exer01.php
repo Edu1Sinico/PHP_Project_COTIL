@@ -1,7 +1,6 @@
 <?php
 
 $frase = "essa e a melhor turma de DS do COTIL.";
-$strInv = " ";
 $cont = 0;
 
 echo "Texto original: <br>\n$frase<br>";
@@ -20,8 +19,8 @@ function strCap($str)
 function strRevert($str)
 {
     for ($n = strlen($str); $n >= 0; $n--) {
-        $strInv[] = $str[$n];
-        $cont++;
+        $strInv = $str[$n];
+        $cont--;
     }
     return $strInv;
 }
