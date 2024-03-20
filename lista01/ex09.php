@@ -1,6 +1,6 @@
 <?php
 
-/* 7. Reescreva o exercício anterior utilizando a função max do php.*/
+/* 9. Reescreva o exercício anterior utilizando a função max do php.*/
 
 echo "Exercício 9: <br><br>";
 
