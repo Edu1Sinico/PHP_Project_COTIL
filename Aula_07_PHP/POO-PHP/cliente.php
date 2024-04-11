@@ -1,11 +1,9 @@
 <?php
-
-
 class cliente
 {
     private int $id;
-    private String $cpf_cnpj;
-    private int $razaoSocial;
+    // private String $cpfCnpj;
+    private String $razaoSocial;
     private dateTime $dataNascimento;
     private String $nome;
     private String $rua;
@@ -19,30 +17,10 @@ class cliente
     private String $celular;
     private float $limite;
 
-    public function __construct(int $id, String $cpf_cnpj, int $razaoSocial, dateTime $dataNascimento, String $nome, String $rua, int $numero, String $bairro, String $cidade, String $complemento, String $cep, String $telefone, String $email, String $celular, float $limite)
-    {
-        $this->id = $id;
-        $this->cpf_cnpj = $cpf_cnpj;
-        $this->razaoSocial = $razaoSocial;
-        $this->dataNascimento = $dataNascimento;
-        $this->nome = $nome;
-        $this->rua = $rua;
-        $this->numero = $numero;
-        $this->bairro = $bairro;
-        $this->cidade = $cidade;
-        $this->complemento = $complemento;
-        $this->cep = $cep;
-        $this->telefone = $telefone;
-        $this->email = $email;
-        $this->celular = $celular;
-        $this->limite = $limite;
-    }
-
     public function getId()
     {
         return $this->id;
     }
-
 
     public function setId(int $id)
     {
@@ -54,17 +32,17 @@ class cliente
         return $this->id;
     }
 
-    public function setCpf_cnpj(String $cpf_cnpj)
-    {
-        $this->cpf_cnpj = $cpf_cnpj;
-    }
+    // public function setCpf_cnpj(String $cpfCnpj)
+    // {
+    //     $this->cpfCnpj = $cpfCnpj;
+    // }
 
     public function getRazaoSocial()
     {
         return $this->razaoSocial;
     }
 
-    public function setRazaoSocial(int $razaoSocial)
+    public function setRazaoSocial(String $razaoSocial)
     {
         $this->razaoSocial = $razaoSocial;
     }
