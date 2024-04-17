@@ -1,0 +1,15 @@
+{
+    "name": "projeto/prj_composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "prj_composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sinico"
+        }
+    ],
+    "require": {}
+}
